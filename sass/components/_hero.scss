@@ -1,35 +1,82 @@
 .hero-section {
   background-image: linear-gradient(to right, $overlayColor, $overlayColor),
-    url(../images/background.jpg);
+    url(../images/hero-img/hero-phone.jpg);
+
+  padding: 118px 0;
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero-img/hero-phone@2x.jpg");
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero-img/hero-tablet.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/hero-img/hero-tablet@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero-img/hero-desktop.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/hero-img/hero-desktop@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    height: 600px;
+  }
 }
 
 .hero-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $whiteColor;
-  width: 696px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-button {
-  @include button(30px);
-
   &:hover,
   &:focus {
     background: $accentHover;
+  }
+
+  @media screen and (max-width: 768px) {
+    @include button(24px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include button(32px);
   }
 }
 .hero {

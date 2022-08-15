@@ -2,6 +2,14 @@ body {
   font-family: $mainFontFamily;
   color: $textColor;
   width: 100%;
-  padding: 82px 0 0;
   margin: 0;
+}
+body.modal-open {
+  overflow: hidden;
+}
+
+body.menu-open {
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
 }

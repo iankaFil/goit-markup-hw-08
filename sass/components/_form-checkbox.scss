@@ -1,14 +1,13 @@
 .form__terms-thumb {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
 .form__terms {
   position: relative;
-  display: flex;
-  align-items: center;
-  font-size: $simpleFontSize;
+  font-size: 12px;
   line-height: 1.71;
   color: $subTextColor;
 
@@ -40,9 +39,7 @@
 }
 
 .form__btn-thumb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .form__btn {

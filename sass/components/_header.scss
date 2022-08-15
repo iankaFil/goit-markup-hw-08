@@ -3,12 +3,49 @@
   position: fixed;
   width: 100%;
   z-index: 1;
-  background: #fff;
+  background: $whiteColor;
   top: 0;
+
+  @media screen and (max-width: 480px) {
+    width: 480px;
+    height: 65px;
+    padding: 10px 0;
+  }
+}
+.header-wrap {
+  justify-content: space-between;
 }
 
-.header-wrap {
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 1200px) {
+  .header-wrap {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+.header__container {
   display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.header__menu {
+  @media screen and (max-width: 767px) {
+  }
+}
+
+.header_menu-button {
+  margin-left: auto;
+  display: inline-flex;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }

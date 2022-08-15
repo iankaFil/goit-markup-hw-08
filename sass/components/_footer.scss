@@ -1,18 +1,25 @@
 .footer {
   background: $backgroundColor;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
+  text-align: center;
 
   &-container {
-    display: flex;
+    display: block;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  &__first-container {
+    @media screen and (max-width: 480px) {
+      margin-bottom: 60px;
+    }
   }
   &__second-container {
-    width: 206px;
-    margin-left: 70px;
-    margin-top: 12px;
+    @media screen and (max-width: 480px) {
+      margin-bottom: 60px;
+    }
   }
-  &__third-container {
-    margin-left: 93px;
-    margin-top: 12px;
-  }
+  // &__third-container {
+  // }
 }

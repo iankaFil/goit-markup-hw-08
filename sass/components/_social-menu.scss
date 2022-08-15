@@ -1,0 +1,29 @@
+.social-small__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accentColor;
+
+  &:not(:last-child) {
+    padding-right: 10px;
+    border-right: $borderFormInput;
+  }
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+}
+
+.social-small {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+  }
+  @media screen and (max-width: 767px) and (max-width: 420px) {
+    font-size: 12px;
+  }
+}
+.social {
+  gap: 10px;
+}
