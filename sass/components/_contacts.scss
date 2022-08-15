@@ -1,0 +1,32 @@
+.header-contact__link {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: $simpleFontSize;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $subTextColor;
+  display: flex;
+  align-items: center;
+  transition: color $animation;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    cursor: pointer;
+  }
+}
+.header-contact__list {
+  margin-left: auto;
+  gap: 50px;
+}
+
+.header-contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill $animation, background-color $animation;
+
+  &:hover,
+  &:focus {
+    fill: currentColor;
+  }
+}

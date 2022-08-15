@@ -1,0 +1,21 @@
+.features__list {
+  gap: 30px;
+}
+
+.features__item {
+  width: calc((100% - 90px) / 4);
+}
+
+.features__thumb {
+  padding: 25px 0;
+  display: flex;
+  background-color: $btnColor;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.features__desc {
+  font-size: $simpleFontSize;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $subTextColor;
+}

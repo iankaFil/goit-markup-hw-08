@@ -1,0 +1,39 @@
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  color: $textColor;
+  background: $btnColor;
+  border: 0;
+  border-radius: 4px;
+  padding: 6px 22px;
+  transition: color $animation, background $animation, box-shadow $animation;
+
+  &:hover,
+  &:focus {
+    background: $accentColor;
+    cursor: pointer;
+    box-shadow: $btnBoxShadow;
+    border-radius: 4px;
+    color: $whiteColor;
+  }
+
+  &--current {
+    background: $accentColor;
+    border-radius: 4px;
+    color: $whiteColor;
+  }
+
+  &--current:hover,
+  &--current:focus {
+    cursor: pointer;
+    box-shadow: $btnBoxShadow;
+  }
+}
+.btn-list {
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}

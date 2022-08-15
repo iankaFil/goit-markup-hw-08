@@ -1,0 +1,56 @@
+.user {
+  background: $sectionColor;
+
+  &-list {
+    gap: 30px;
+  }
+
+  &-list__card {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background: $whiteColor;
+  }
+
+  &-list__card-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &-list__card-desc {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $subTextColor;
+    padding-bottom: 16px;
+  }
+
+  &-social {
+    display: flex;
+    padding: 0 32px 30px;
+    gap: 10px;
+  }
+
+  &-social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #afb1b8;
+    transition: fill $animation, background $animation;
+
+    &:hover,
+    &:focus {
+      background: $accentColor;
+      fill: $whiteColor;
+    }
+  }
+}

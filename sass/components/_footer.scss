@@ -1,0 +1,18 @@
+.footer {
+  background: $backgroundColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-container {
+    display: flex;
+  }
+  &__second-container {
+    width: 206px;
+    margin-left: 70px;
+    margin-top: 12px;
+  }
+  &__third-container {
+    margin-left: 93px;
+    margin-top: 12px;
+  }
+}

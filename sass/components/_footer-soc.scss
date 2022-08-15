@@ -1,0 +1,26 @@
+.footer__title {
+  color: $whiteColor;
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $whiteColor;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color $animation;
+
+    &:hover,
+    &:focus {
+      background-color: $accentColor;
+    }
+  }
+}

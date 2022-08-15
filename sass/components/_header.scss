@@ -1,0 +1,14 @@
+.header {
+  border-bottom: 1px solid $headerBorder;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background: #fff;
+  top: 0;
+}
+
+.header-wrap {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}

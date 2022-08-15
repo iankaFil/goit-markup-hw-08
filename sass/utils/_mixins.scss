@@ -1,0 +1,27 @@
+@mixin button($horizontalPadding) {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $whiteColor;
+  background: $accentColor;
+  box-shadow: $btnShadow;
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
+  transition: background-color $animation;
+  padding: 10px $horizontalPadding;
+}
+@mixin input($fontSize, $lineHeight, $letterSpacing) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+
+  outline: none;
+  background-color: transparent;
+  color: $textColor;
+  border: $borderFormInput;
+  border-radius: 4px;
+  transition: border-color $animation;
+}

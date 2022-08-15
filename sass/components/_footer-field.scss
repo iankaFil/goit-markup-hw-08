@@ -1,0 +1,59 @@
+.footer__field {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $whiteColor;
+  margin-bottom: 20px;
+}
+
+.footer__input {
+  display: flex;
+  background: transparent;
+  border: $borderFooterInput;
+  filter: $filterFooterInput;
+  border-radius: 4px;
+  min-width: 358px;
+  outline: none;
+  margin-right: 12px;
+  padding: 15px 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: $footerInput;
+  transition: border-color $animation;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: $footerInput;
+  }
+
+  &:focus-within {
+    border-color: $accentColor;
+  }
+}
+.footer__btn {
+  @include button(28px);
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    background-color: $accentHover;
+    cursor: pointer;
+  }
+}
+
+.footer__send-icon {
+  margin-left: 10px;
+}

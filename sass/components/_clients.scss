@@ -1,0 +1,23 @@
+.client-list {
+  display: flex;
+  gap: 30px;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $iconColor;
+    border-radius: 4px;
+    fill: $iconColor;
+    transition: fill $animation, border-color $animation;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      border-color: $accentColor;
+      fill: $accentColor;
+    }
+  }
+}

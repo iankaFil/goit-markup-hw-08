@@ -1,0 +1,58 @@
+.form__label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: $subTextColor;
+}
+.form__field-thumb {
+  display: flex;
+  position: relative;
+  margin-top: 4px;
+}
+.form__field {
+  margin-bottom: 10px;
+}
+.form__input {
+  @include input(14px, 1.71, 0.03);
+
+  padding-left: 42px;
+  flex-grow: 1;
+  height: 38px;
+}
+.form__textarea {
+  @include input(12px, 1.1, 0.01);
+
+  width: 448px;
+  resize: none;
+  margin-top: 4px;
+  padding: 10px 16px;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.form__last-field {
+  margin-bottom: 20px;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  display: inline-block;
+  transition: fill $animation;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  border-color: $accentColor;
+}
+
+.form__input:focus + .form__icon {
+  fill: $accentColor;
+}

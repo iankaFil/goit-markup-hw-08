@@ -1,0 +1,56 @@
+.form__terms-thumb {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form__terms {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: $simpleFontSize;
+  line-height: 1.71;
+  color: $subTextColor;
+
+  &--accent {
+    color: $accentColor;
+    text-decoration: underline;
+  }
+}
+
+.form__checkbox {
+  position: absolute;
+  transition: border-color $animation;
+}
+
+.form__icon-check {
+  background-size: contain;
+  background-origin: border-box;
+  margin-right: 7px;
+  fill: $whiteColor;
+  border: 2px solid $textColor;
+  border-radius: 2px;
+  transition: border $animation, background-color $animation,
+    border-color $animation;
+
+  .form__checkbox:checked + & {
+    background-color: $accentColor;
+    border-color: $accentColor;
+  }
+}
+
+.form__btn-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__btn {
+  @include button(52px);
+
+  &:hover,
+  &:focus {
+    background: $accentHover;
+    cursor: pointer;
+  }
+}
