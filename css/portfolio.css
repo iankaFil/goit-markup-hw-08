@@ -39,6 +39,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -158,7 +159,7 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .header-nav__list {
     display: block;
   }
@@ -231,6 +232,16 @@ body.modal-open {
 }
 .header-nav__link--current {
   color: #2196f3;
+}
+@media screen and (min-width: 767px) {
+  .header-nav__link {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
 }
 
 @media screen and (max-width: 480px) {

@@ -23,7 +23,7 @@
 .form__textarea {
   @include input(12px, 1.1, 0.01);
 
-  width: 448px;
+  max-width: 448px;
   resize: none;
   margin-top: 4px;
   padding: 10px 16px;

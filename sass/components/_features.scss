@@ -1,19 +1,21 @@
 .features__list {
-  display: block;
   gap: 30px;
-
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
 .features__item {
-  min-width: auto;
-
+  margin: 0 auto;
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
+      // min-width: 100%;
+      max-width: 480px;
     }
   }
   @media screen and (min-width: 768px) {
@@ -28,6 +30,7 @@
 .features__thumb {
   padding: 25px 0;
   display: flex;
+
   background-color: $btnColor;
   justify-content: center;
   margin-bottom: 30px;
@@ -39,8 +42,6 @@
   color: $subTextColor;
 }
 .features__subtitle {
-  display: flex;
-  justify-content: center;
   @media screen and (min-width: 768px) {
     text-align: left;
   }

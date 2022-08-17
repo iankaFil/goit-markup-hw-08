@@ -2,24 +2,18 @@
   background: $backgroundColor;
   padding: 60px 0;
   text-align: center;
-
-  &-container {
-    display: block;
-
-    @media screen and (min-width: 768px) {
-      display: flex;
-    }
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    max-width: 480px;
   }
-  &__first-container {
-    @media screen and (max-width: 480px) {
-      margin-bottom: 60px;
-    }
+  .footer__first-container,
+  .footer__second-container {
+    margin-bottom: 60px;
   }
-  &__second-container {
-    @media screen and (max-width: 480px) {
-      margin-bottom: 60px;
-    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    max-width: 768px;
   }
-  // &__third-container {
-  // }
 }

@@ -1,19 +1,22 @@
 .header {
   border-bottom: 1px solid $headerBorder;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
   background: $whiteColor;
   top: 0;
 
-  @media screen and (max-width: 480px) {
-    width: 480px;
+  @media screen and (max-width: 767px) {
     height: 65px;
     padding: 10px 0;
   }
 }
 .header-wrap {
   justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    max-width: 768px;
+    min-width: 100%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -36,14 +39,8 @@
   }
 }
 
-.header__menu {
-  @media screen and (max-width: 767px) {
-  }
-}
-
 .header_menu-button {
   margin-left: auto;
-  display: inline-flex;
 
   @media screen and (min-width: 768px) {
     display: none;

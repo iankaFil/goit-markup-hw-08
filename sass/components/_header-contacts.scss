@@ -1,5 +1,4 @@
-.header-contact__link {
-  font-family: inherit;
+.header-contact__item {
   font-weight: 500;
   font-size: $simpleFontSize;
   line-height: 1.14;
@@ -7,18 +6,31 @@
   color: $subTextColor;
   display: flex;
   align-items: center;
-  transition: color $animation;
+  transition: color $animation, fill $animation;
 
   &:hover,
   &:focus {
+    fill: $accentColor;
     color: $accentColor;
-    cursor: pointer;
+  }
+  &--accent {
+    @media screen and (max-width: 480px) {
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: $accentColor;
+    }
   }
 }
 .header-contact__list {
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+  }
 
   @media screen and (max-width: 767px) {
     flex-direction: column-reverse;
@@ -48,33 +60,6 @@
           gap: 30px;
           flex-direction: row;
         }
-      }
-    }
-
-    .header-contact__link {
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 1.16;
-      letter-spacing: 0.02em;
-      display: flex;
-      transition: color $animation, fill $animation;
-
-      &:hover,
-      &:focus {
-        fill: $accentColor;
-        color: $accentColor;
-      }
-      &--accent {
-        @media screen and (max-width: 480px) {
-          font-weight: 500;
-          font-size: 34px;
-          line-height: 1.17;
-          letter-spacing: 0.02em;
-          color: $accentColor;
-        }
-      }
-      @media screen and (min-width: 768px) {
-        color: $textColor;
       }
     }
 

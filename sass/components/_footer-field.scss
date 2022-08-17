@@ -19,7 +19,8 @@
   border: $borderFooterInput;
   filter: $filterFooterInput;
   border-radius: 4px;
-  width: 450px;
+  min-width: 100%;
+  max-width: 450px;
   outline: none;
   padding: 15px 16px;
   font-size: 16px;

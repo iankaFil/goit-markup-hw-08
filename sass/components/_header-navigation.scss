@@ -2,6 +2,9 @@
   @media screen and (max-width: 480px) {
     display: block;
   }
+  @media screen and (min-width: 768px) {
+    gap: 50px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header-nav .header-nav__link--current::after {
@@ -37,14 +40,13 @@
 }
 
 .header-nav__link {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $textColor;
   transition: color $animation;
-
+  @media screen and (max-width: 480px) {
+    @include font(500, 40px, 1.14, 0.02em, $textColor);
+  }
+  @media screen and (min-width: 768px) {
+    @include font(500, 14px, 1.14, 0.02em, $textColor);
+  }
   &:hover,
   &:focus {
     color: $accentColor;

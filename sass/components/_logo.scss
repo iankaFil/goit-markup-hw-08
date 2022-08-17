@@ -1,10 +1,6 @@
 .logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: $blackColor;
+  @include font(700, 26px, 28px, 0.03em, $blackColor);
+  font-family: $logoFontFamily;
   padding-right: 0;
 
   &-footer {
@@ -15,10 +11,6 @@
 
   &--accent {
     color: $accentColor;
-    margin: 0;
-  }
-
-  @media screen and (max-width: 767px) {
   }
 
   @media screen and (min-width: 768px) {
