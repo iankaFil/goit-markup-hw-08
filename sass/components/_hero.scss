@@ -1,9 +1,8 @@
 .hero-section {
   background-image: linear-gradient(to right, $overlayColor, $overlayColor),
     url(../images/hero-img/hero-phone.jpg);
-
+  max-width: 1600px;
   padding: 118px 0;
-  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -49,20 +48,15 @@
 }
 
 .hero-title {
+  @include font(900, 26px, 1.62, 0.06em, $whiteColor);
   max-width: 360px;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: $whiteColor;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 
   @media screen and (min-width: 1200px) {
-    font-size: 44px;
-    line-height: 1.36;
+    @include font(900, 44px, 1.36, 0.06em, $whiteColor);
     max-width: 696px;
   }
 }

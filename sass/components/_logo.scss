@@ -3,21 +3,22 @@
   font-family: $logoFontFamily;
   padding-right: 0;
 
-  &-footer {
-    color: $whiteColor;
-    margin-bottom: 20px;
-    display: inline-block;
-  }
-
-  &--accent {
-    color: $accentColor;
-  }
-
   @media screen and (min-width: 768px) {
     margin-right: 88px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
+  }
+
+  &-footer {
+    color: $whiteColor;
+    margin-bottom: 20px;
+    margin-right: 0;
+    display: inline-block;
+  }
+
+  &--accent {
+    color: $accentColor;
   }
 }

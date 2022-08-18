@@ -4,12 +4,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  max-width: 450px;
-  height: 581px;
   transition: transform $animation;
   background-color: $whiteColor;
   box-shadow: $formBoxShadow;
   border-radius: 4px;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 100%;
+    min-width: 450px;
+    height: 609px;
+  }
 }
 
 .close-btn {
@@ -34,11 +38,7 @@
   }
 }
 .form__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(700, 20px, 1.15, 0.03em, $textColor);
   text-align: center;
-  letter-spacing: 0.03em;
-  color: $textColor;
   margin-bottom: 12px;
 }

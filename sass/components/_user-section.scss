@@ -19,6 +19,9 @@
     @media screen and (min-width: 481px) {
       width: calc((100% - 30px) / 2);
     }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &-list__card-name {

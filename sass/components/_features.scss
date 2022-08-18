@@ -11,11 +11,12 @@
 
 .features__item {
   margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
-      // min-width: 100%;
-      max-width: 480px;
     }
   }
   @media screen and (min-width: 768px) {
@@ -36,12 +37,10 @@
   margin-bottom: 30px;
 }
 .features__desc {
-  font-size: $simpleFontSize;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $subTextColor;
+  @include font(null, $simpleFontSize, 1.71, 0.03em, $subTextColor);
 }
 .features__subtitle {
+  text-align: center;
   @media screen and (min-width: 768px) {
     text-align: left;
   }

@@ -14,19 +14,12 @@
   border-top: none;
 
   &__name {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: $textColor;
+    @include font(700, 18px, 2, 0.06em, $textColor);
     margin-bottom: 4px;
   }
 
   &__desc {
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: $subTextColor;
+    @include font(null, 16px, 1.87, 0.03em, $subTextColor);
   }
 }
 
@@ -40,17 +33,15 @@ img {
 }
 
 .image__desc {
+  @include font(null, 18px, 1.56, null, $whiteColor);
   position: absolute;
   padding: 63px 24px;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  font-size: 18px;
-  line-height: 1.56;
   transform: translateY(100%);
   transition: transform $animation;
-  color: $whiteColor;
   background-color: $cardBgColor;
 
   .product__link:hover &,

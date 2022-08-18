@@ -1,20 +1,24 @@
 .footer__field {
   text-align: center;
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  //   flex-direction: row;
+  // }
 }
 
 .footer__label {
+  @include font(700, 14px, 1.14, 0.03em, $whiteColor);
   display: flex;
-  flex-direction: column;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: $whiteColor;
   margin-bottom: 20px;
+
+  // @media screen and (max-width: 1199px) {
+  //   flex-direction: column;
+  // }
 }
 
 .footer__input {
+  @include font(null, 16px, 1.25, 0.03em, $footerInput);
   background: transparent;
   border: $borderFooterInput;
   filter: $filterFooterInput;
@@ -23,17 +27,17 @@
   max-width: 450px;
   outline: none;
   padding: 15px 16px;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: $footerInput;
   transition: border-color $animation;
 
+  @media screen and (min-width: 500px) and (max-width: 1199px) {
+    width: 450px;
+  }
+  // @media screen and (min-width: 1200px) {
+
+  // }
+
   &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: $footerInput;
+    @include font(null, 16px, 1.25, 0.03em, $footerInput);
   }
 
   &:focus-within {
@@ -45,6 +49,10 @@
   display: flex;
   align-items: center;
   margin: 20px auto 0;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 
   &:hover,
   &:focus {

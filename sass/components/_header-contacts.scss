@@ -1,39 +1,21 @@
-.header-contact__item {
-  font-weight: 500;
-  font-size: $simpleFontSize;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $subTextColor;
-  display: flex;
-  align-items: center;
-  transition: color $animation, fill $animation;
-
-  &:hover,
-  &:focus {
-    fill: $accentColor;
-    color: $accentColor;
-  }
-  &--accent {
-    @media screen and (max-width: 480px) {
-      font-weight: 500;
-      font-size: 34px;
-      line-height: 1.17;
-      letter-spacing: 0.02em;
-      color: $accentColor;
-    }
-  }
-}
 .header-contact__list {
   display: flex;
-  flex-direction: column;
-  gap: 32px;
 
   @media screen and (min-width: 768px) {
     align-items: center;
+    gap: 10px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 900px) {
+    gap: 20px;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 901px) {
+    gap: 30px;
   }
 
   @media screen and (max-width: 767px) {
     flex-direction: column-reverse;
+    gap: 32px;
 
     .header-contact__item:nth-child(2) {
       font-size: 34px;
@@ -43,28 +25,38 @@
         font-size: 28px;
       }
     }
+  }
+  .header-contact__item:nth-child(1) {
+    font-size: 24px;
 
-    .header-contact__item:nth-child(1) {
-      font-size: 24px;
-
-      @media screen and (max-width: 420px) {
-        font-size: 20px;
-      }
-
-      .header-contact__item:not(:last-child) {
-        @media screen and (min-width: 768px) {
-          gap: 10px;
-        }
-
-        @media screen and (min-width: 1200px) {
-          gap: 30px;
-          flex-direction: row;
-        }
-      }
+    @media screen and (max-width: 420px) {
+      font-size: 20px;
     }
 
+    .header-contact__item:not(:last-child) {
+      @media screen and (min-width: 768px) {
+        gap: 10px;
+      }
+    }
+  }
+  .header-contact__link {
+    display: flex;
+    align-items: center;
+    transition: color $animation, fill $animation;
+    @include font(500, $simpleFontSize, 1.14, 0.02em, $subTextColor);
+
+    &:hover,
+    &:focus {
+      fill: $accentColor;
+      color: $accentColor;
+    }
+    &--accent {
+      @media screen and (max-width: 480px) {
+        @include font(500, 34px, 1.17, 0.02em, $accentColor);
+      }
+    }
     .header-contact__icon {
-      margin-right: 10px;
+      margin-right: 8px;
       fill: currentColor;
       transition: fill $animation, background-color $animation;
 

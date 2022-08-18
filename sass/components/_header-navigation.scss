@@ -1,5 +1,5 @@
 .header-nav__list {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: block;
   }
   @media screen and (min-width: 768px) {
@@ -37,11 +37,14 @@
 }
 .header-nav__item {
   position: relative;
+  @media screen and (min-width: 768px) {
+    padding: 32px 0;
+  }
 }
 
 .header-nav__link {
   transition: color $animation;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     @include font(500, 40px, 1.14, 0.02em, $textColor);
   }
   @media screen and (min-width: 768px) {
@@ -57,7 +60,7 @@
   }
 }
 .header-nav__item:not(:last-child) {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 32px;
   }
 }

@@ -1,9 +1,6 @@
 .form__label {
+  @include font(null, 12px, 1.1, 0.01em, $subTextColor);
   display: block;
-  font-size: 12px;
-  line-height: 1.1;
-  letter-spacing: 0.01em;
-  color: $subTextColor;
 }
 .form__field-thumb {
   display: flex;
@@ -15,15 +12,14 @@
 }
 .form__input {
   @include input(14px, 1.71, 0.03);
-
   padding-left: 42px;
   flex-grow: 1;
   height: 38px;
 }
 .form__textarea {
   @include input(12px, 1.1, 0.01);
-
   max-width: 448px;
+  min-width: 100%;
   resize: none;
   margin-top: 4px;
   padding: 10px 16px;
