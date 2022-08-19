@@ -3,11 +3,13 @@
   width: 100vw;
   z-index: 1;
   background: $whiteColor;
+  position: fixed;
+  top: 0;
 
-  @media screen and (max-width: 767px) {
-    height: 65px;
-    padding: 10px 0;
-  }
+  // @media screen and (max-width: 767px) {
+  //   height: 65px;
+  //   padding: 10px 0;
+  // }
 }
 .header-wrap {
   display: flex;

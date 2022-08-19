@@ -1,20 +1,10 @@
 .footer__field {
-  text-align: center;
-  // @media screen and (min-width: 1200px) {
-  //   display: flex;
-  //   flex-direction: row;
-  // }
+  margin-top: 20px;
 }
 
 .footer__label {
   @include font(700, 14px, 1.14, 0.03em, $whiteColor);
-  display: flex;
   text-transform: uppercase;
-  margin-bottom: 20px;
-
-  // @media screen and (max-width: 1199px) {
-  //   flex-direction: column;
-  // }
 }
 
 .footer__input {
@@ -23,18 +13,21 @@
   border: $borderFooterInput;
   filter: $filterFooterInput;
   border-radius: 4px;
-  min-width: 100%;
-  max-width: 450px;
+
   outline: none;
   padding: 15px 16px;
   transition: border-color $animation;
 
+  @media screen and (max-width: 499px) {
+    min-width: 100%;
+  }
+
   @media screen and (min-width: 500px) and (max-width: 1199px) {
     width: 450px;
   }
-  // @media screen and (min-width: 1200px) {
-
-  // }
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
+  }
 
   &::placeholder {
     @include font(null, 16px, 1.25, 0.03em, $footerInput);
