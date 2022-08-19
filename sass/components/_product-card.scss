@@ -1,6 +1,7 @@
 .product__link {
   display: block;
   transition: opacity $animation;
+  min-width: 100%;
 
   &:hover,
   &:focus {
