@@ -1384,7 +1384,7 @@ body.modal-open {
 @media screen and (max-width: 1199px) {
   .form-container {
     max-width: 100%;
-    min-width: 450px;
+    min-width: 358px;
     height: 609px;
   }
 }

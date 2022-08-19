@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <title>Портфоліо</title>
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <!-- <link rel="stylesheet" href="./css/modern-normalize.css" /> -->
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
@@ -108,7 +108,16 @@
             <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
-                  <img class="image" src="./images/portfolio/portfolio-img.jpg" alt="Технокряк" width="370" />
+                  <picture> 
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="./images/portfolio/portfolio-img@3x.jpg 450w, ./images/portfolio/portfolio-img@2x.jpg 900w">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="./images/portfolio/portfolio-img@3x.jpg 450w, ./images/portfolio/portfolio-img@2x.jpg 900w">
+                    <source type="image/jpeg" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/jpeg" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <img class="image" src="./images/portfolio/portfolio-img.jpg" alt="Технокряк" width="370" />
+                  </picture>
+                  
                   <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -124,7 +133,16 @@
             <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
-                  <img class="image" src="./images/portfolio/portfolio-img1.jpg" alt="Постер" width="370" />
+                  <picture> 
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <img class="image" src="./images/portfolio/portfolio-img1.jpg" alt="Постер" width="370" />
+                  </picture>
+                  
                   <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -140,12 +158,21 @@
             <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
-                  <img
+                  <picture> 
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                     <img
                     class="image"
                     src="./images/portfolio/portfolio-img2.jpg"
                     alt="Ресторан Seafood"
                     width="370"
                   />
+                  </picture>
+                 
                   <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -161,12 +188,21 @@
             <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
-                  <img
+                  <picture> 
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <img
                     class="image"
                     src="./images/portfolio/portfolio-img3.jpg"
                     alt="Проект Prime"
                     width="370"
                   />
+                  </picture>
+                  
                   <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -182,12 +218,21 @@
             <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
-                  <img
+                  <picture> 
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <img
                     class="image"
                     src="./images/portfolio/portfolio-img4.jpg"
                     alt="Проект Boxes"
                     width="370"
                   />
+                  </picture>
+                  
                   <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -203,12 +248,21 @@
             <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
-                  <img
+                  <picture> 
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <img
                     class="image"
                     src="./images/portfolio/portfolio-img5.jpg"
                     alt="Inspiration has no Borders"
                     width="370"
                   />
+                  </picture>
+                  
                   <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -224,12 +278,21 @@
             <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
-                  <img
+                  <picture> 
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <img
                     class="image"
                     src="./images/portfolio/portfolio-img6.jpg"
                     alt="Издание Limited Edition"
                     width="370"
                   />
+                  </picture>
+                  
                   <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -245,12 +308,21 @@
             <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
-                  <img
+                  <picture> 
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <img
                     class="image"
                     src="./images/portfolio/portfolio-img7.jpg"
                     alt="Проект LAB"
                     width="370"
                   />
+                  </picture>
+                  
                   <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -266,12 +338,21 @@
             <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
-                  <img
+                  <picture> 
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
+                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
+                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
+                    <img
                     class="image"
                     src="./images/portfolio/portfolio-img8.jpg"
                     alt="Growing Business"
                     width="370"
                   />
+                  </picture>
+                  
                   <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
