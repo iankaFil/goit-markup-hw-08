@@ -11,7 +11,6 @@
       rel="stylesheet"
     />
     <title>Портфоліо</title>
-    <!-- <link rel="stylesheet" href="./css/modern-normalize.css" /> -->
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
@@ -23,13 +22,13 @@
           <nav class="header-nav">
             <ul class="header-nav__list">
               <li class="header-nav__item">
-                <a href="./index.html" class="header-nav__link header-nav__link--current">Студія</a>
+                <a href="./index.html" class="header-nav__link">Студія</a>
               </li>
               <li class="header-nav__item">
-                <a href="./portfolio.html" class="header-nav__link">Портфоліо</a>
+                <a href="./portfolio.html" class="header-nav__link header-nav__link--current">Портфоліо</a>
               </li>
               <li class="header-nav__item">
-                <a href="" class="header-nav__link">Контакти</a>
+                <a href="#contacts" class="header-nav__link">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -81,12 +80,13 @@
         </button>
       </div>
     </header>
-    <!--PRODUCTS BUTTON LIST-->
-    <main class="portfolio">
-      <section class="section">
-        <div class="container">
-          <h2 class="visually-hidden">Список</h2>
-          <ul class="btn-list">
+    
+<main class="portfolio">
+  <section class="section">
+    <div class="container">
+      <!--PRODUCTS BUTTON LIST-->
+      <h2 class="visually-hidden">Список</h2>
+      <ul class="btn-list">
             <li class="btn-list__item">
               <button class="button button--current" type="button">Усе</button>
             </li>
@@ -102,35 +102,35 @@
             <li class="btn-list__item">
               <button class="button" type="button">Маркетинг</button>
             </li>
-          </ul>
-          <!--PRODUCTS SECTION LIST-->
-          <ul class="product">
-            <li class="product__item">
-              <a class="product__link">
-                <div class="product__image-thumb">
-                  <picture> 
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="./images/portfolio/portfolio-img@3x.jpg 450w, ./images/portfolio/portfolio-img@2x.jpg 900w">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="./images/portfolio/portfolio-img@3x.jpg 450w, ./images/portfolio/portfolio-img@2x.jpg 900w">
-                    <source type="image/jpeg" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/jpeg" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <img class="image" src="./images/portfolio/portfolio-img.jpg" alt="Технокряк" width="370" />
-                  </picture>
+      </ul>
+      <!--PRODUCTS SECTION LIST-->
+      <ul class="product">
+        <li class="product__item">
+          <a class="product__link">
+            <div class="product__image-thumb">
+              <picture>
+                <source srcset="./images/portfolio/technokryak-desktop.jpg 1x,
+                    ./images/portfolio/technokryak-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/portfolio/technokryak-tablet.jpg 1x,
+                    ./images/portfolio/technokryak-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="images/portfolio/tecnokryak-phone.jpg 1x,
+                    ./images/portfolio/tehnokryak-phone@2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/portfolio/technokryak.jpg" alt="Технокряк" />
+                </picture>
                   
-                  <p class="image__desc">
+              <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
-                  </p>
-                </div>
-                <div class="image-card">
-                  <h3 class="image-card__name">Технокряк</h3>
-                  <p class="image-card__desc">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="product__item">
+              </p>
+            </div>
+            <div class="image-card">
+              <h3 class="image-card__name">Технокряк</h3>
+              <p class="image-card__desc">Веб-сайт</p>
+            </div>
+          </a>
+        </li>
+        <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
                   <picture> 
@@ -154,8 +154,8 @@
                   <p class="image-card__desc">Дизайн</p>
                 </div>
               </a>
-            </li>
-            <li class="product__item">
+        </li>
+        <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
                   <picture> 
@@ -184,8 +184,8 @@
                   <p class="image-card__desc">Додаток</p>
                 </div>
               </a>
-            </li>
-            <li class="product__item">
+        </li>
+        <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
                   <picture> 
@@ -214,8 +214,8 @@
                   <p class="image-card__desc">Маркетинг</p>
                 </div>
               </a>
-            </li>
-            <li class="product__item">
+        </li>
+        <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
                   <picture> 
@@ -244,8 +244,8 @@
                   <p class="image-card__desc">Додаток</p>
                 </div>
               </a>
-            </li>
-            <li class="product__item">
+        </li>
+        <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
                   <picture> 
@@ -274,8 +274,8 @@
                   <p class="image-card__desc">Веб-сайт</p>
                 </div>
               </a>
-            </li>
-            <li class="product__item">
+        </li>
+        <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
                   <picture> 
@@ -304,8 +304,8 @@
                   <p class="image-card__desc">Дизайн</p>
                 </div>
               </a>
-            </li>
-            <li class="product__item">
+        </li>
+        <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
                   <picture> 
@@ -334,8 +334,8 @@
                   <p class="image-card__desc">Маркетинг</p>
                 </div>
               </a>
-            </li>
-            <li class="product__item">
+        </li>
+        <li class="product__item">
               <a class="product__link">
                 <div class="product__image-thumb">
                   <picture> 
@@ -364,7 +364,7 @@
                   <p class="image-card__desc">Додаток</p>
                 </div>
               </a>
-            </li>
+        </li>
           </ul>
         </div>
       </section>
@@ -372,7 +372,7 @@
     <!--FOOTER-->
     <footer class="footer section">
       <div class="footer-container container">
-        <div class="footer__first-container">
+        <div class="footer__first-container" id="contacts">
           <a href="index.html" class="logo logo-footer">
             <span class="logo-footer logo--accent">Web</span>Studio</a
           >
