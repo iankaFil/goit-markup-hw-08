@@ -32,9 +32,11 @@
   justify-content: center;
   margin-bottom: 50px;
   gap: 8px;
+  flex-wrap: wrap;
+  justify-content: start;
 
-  @media screen and (max-width: 600px) {
-    flex-wrap: wrap;
-    justify-content: start;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
