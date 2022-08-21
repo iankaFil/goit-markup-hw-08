@@ -826,6 +826,11 @@ body.modal-open {
   margin: 0 auto;
 }
 @media screen and (max-width: 767px) {
+  .features__item {
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 767px) {
   .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
