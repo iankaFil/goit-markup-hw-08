@@ -9,6 +9,15 @@
     cursor: pointer;
   }
 }
+.product__item {
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+  }
+}
 .image-card {
   padding: 20px 24px;
   border: 1px solid $imageBorder;

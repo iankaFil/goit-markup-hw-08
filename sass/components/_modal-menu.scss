@@ -30,7 +30,7 @@
   }
 }
 
-.menu__social.social {
+.social-menu.social {
   display: none;
 
   @media screen and (max-width: 767px) {
@@ -44,7 +44,7 @@
     padding: 48px 20px 24px 20px;
   }
 
-  @media screen and (max-width: 767px) and (min-width: 420px) {
+  @media screen and (min-width: 420px) and (max-width: 767px) {
     padding: 48px 40px;
   }
 }

@@ -1,9 +1,5 @@
 .social-small__item {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: $accentColor;
+  @include font(500, 18px, 1.22, 00.02em, $accentColor);
 
   &:not(:last-child) {
     padding-right: 10px;
@@ -16,12 +12,14 @@
 
 .social-small {
   display: none;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 479px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     display: flex;
+    justify-content: center;
   }
   @media screen and (max-width: 767px) and (max-width: 420px) {
     font-size: 12px;

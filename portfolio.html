@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <title>Портфоліо</title>
-    <link rel="stylesheet" href="./css/portfolio.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--HEADER-->
@@ -131,17 +131,17 @@
           </a>
         </li>
         <li class="product__item">
-              <a class="product__link">
-                <div class="product__image-thumb">
-                  <picture> 
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <img class="image" src="./images/portfolio/portfolio-img1.jpg" alt="Постер" width="370" />
-                  </picture>
+          <a class="product__link">
+            <div class="product__image-thumb">
+              <picture>
+                <source srcset="./images/portfolio/poster-desktop.jpg 1x,
+                    ./images/portfolio/poster-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/portfolio/poster-tablet.jpg 1x,
+                    ./images/portfolio/poster-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/portfolio/poster-phone.jpg 1x,
+                    ./images/portfolio/poster-phone@2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/portfolio/poster.jpg" alt="Постер" />
+              </picture>
                   
                   <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -156,22 +156,17 @@
               </a>
         </li>
         <li class="product__item">
-              <a class="product__link">
-                <div class="product__image-thumb">
-                  <picture> 
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                     <img
-                    class="image"
-                    src="./images/portfolio/portfolio-img2.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                  />
-                  </picture>
+          <a class="product__link">
+            <div class="product__image-thumb">
+              <picture>
+                <source srcset="./images/portfolio/seafood-desktop.jpg 1x,
+                    ./images/portfolio/seafood-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/portfolio/seafood-tablet.jpg 1x,
+                    ./images/portfolio/seafood-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/portfolio/seafood-phone.jpg 1x,
+                    ./images/portfolio/seafood-phone@2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/portfolio/seafood.jpg" alt="Ресторан" />
+              </picture>
                  
                   <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -186,29 +181,24 @@
               </a>
         </li>
         <li class="product__item">
-              <a class="product__link">
-                <div class="product__image-thumb">
-                  <picture> 
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <img
-                    class="image"
-                    src="./images/portfolio/portfolio-img3.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                  />
-                  </picture>
+          <a class="product__link">
+            <div class="product__image-thumb">
+              <picture>
+                <source srcset="./images/portfolio/prime-desktop.jpg 1x,
+                    ./images/portfolio/prime-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/portfolio/prime-tablet.jpg 1x,
+                    ./images/portfolio/prime-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/portfolio/prime-phone.jpg 1x,
+                    ./images/portfolio/prime-phone@2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/portfolio/prime.jpg" alt="Проект Prime" />
+              </picture>
                   
-                  <p class="image__desc">
+              <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
-                  </p>
-                </div>
+              </p>
+            </div>
                 <div class="image-card">
                   <h3 class="image-card__name">Проект Prime</h3>
                   <p class="image-card__desc">Маркетинг</p>
@@ -216,29 +206,24 @@
               </a>
         </li>
         <li class="product__item">
-              <a class="product__link">
-                <div class="product__image-thumb">
-                  <picture> 
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <img
-                    class="image"
-                    src="./images/portfolio/portfolio-img4.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                  />
-                  </picture>
+          <a class="product__link">
+            <div class="product__image-thumb">
+              <picture>
+                <source srcset="./images/portfolio/boxes-desktop.jpg 1x,
+                    ./images/portfolio/boxes-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/portfolio/boxes-tablet.jpg 1x,
+                    ./images/portfolio/boxes-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/portfolio/boxes-phone.jpg 1x,
+                    ./images/portfolio/boxes-phone@2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/portfolio/boxes.jpg" alt="Проект Boxes" />
+              </picture>
                   
-                  <p class="image__desc">
+              <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
-                  </p>
-                </div>
+              </p>
+            </div>
                 <div class="image-card">
                   <h3 class="image-card__name">Проект Boxes</h3>
                   <p class="image-card__desc">Додаток</p>
@@ -246,29 +231,24 @@
               </a>
         </li>
         <li class="product__item">
-              <a class="product__link">
-                <div class="product__image-thumb">
-                  <picture> 
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <img
-                    class="image"
-                    src="./images/portfolio/portfolio-img5.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                  />
-                  </picture>
+          <a class="product__link">
+            <div class="product__image-thumb">
+              <picture>
+                <source srcset="./images/portfolio/inspiration-desktop.jpg 1x,
+                    ./images/portfolio/inspiration-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/portfolio/inspiration-tablet.jpg 1x,
+                    ./images/portfolio/inspiration-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/portfolio/inspiration-phone.jpg 1x,
+                    ./images/portfolio/inspiration-phone@2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/portfolio/inspiration.jpg" alt="Inspiration has no Borders" />
+              </picture>
                   
-                  <p class="image__desc">
+              <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
-                  </p>
-                </div>
+              </p>
+            </div>
                 <div class="image-card">
                   <h3 class="image-card__name">Inspiration has no Borders</h3>
                   <p class="image-card__desc">Веб-сайт</p>
@@ -276,29 +256,24 @@
               </a>
         </li>
         <li class="product__item">
-              <a class="product__link">
-                <div class="product__image-thumb">
-                  <picture> 
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <img
-                    class="image"
-                    src="./images/portfolio/portfolio-img6.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                  />
-                  </picture>
+          <a class="product__link">
+            <div class="product__image-thumb">
+              <picture>
+                <source srcset="./images/portfolio/limited-desktop.jpg 1x,
+                    ./images/portfolio/limited-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/portfolio/limited-tablet.jpg 1x,
+                    ./images/portfolio/limited-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/portfolio/limited-phone.jpg 1x,
+                    ./images/portfolio/limited-phone@2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/portfolio/limited.jpg" alt="Видання Limited Edition" />
+              </picture>
                   
-                  <p class="image__desc">
+              <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
-                  </p>
-                </div>
+              </p>
+            </div>
                 <div class="image-card">
                   <h3 class="image-card__name">Видання Limited Edition</h3>
                   <p class="image-card__desc">Дизайн</p>
@@ -306,29 +281,24 @@
               </a>
         </li>
         <li class="product__item">
-              <a class="product__link">
-                <div class="product__image-thumb">
-                  <picture> 
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <img
-                    class="image"
-                    src="./images/portfolio/portfolio-img7.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                  />
-                  </picture>
+          <a class="product__link">
+            <div class="product__image-thumb">
+              <picture>
+                <source srcset="./images/portfolio/lab-desktop.jpg 1x,
+                    ./images/portfolio/lab-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/portfolio/lab-tablet.jpg 1x,
+                    ./images/portfolio/lab-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/portfolio/lab-phone.jpg 1x,
+                    ./images/portfolio/lab-phone@2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/portfolio/lab.jpg" alt="Проект LAB" />
+              </picture>
                   
-                  <p class="image__desc">
+              <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
-                  </p>
-                </div>
+              </p>
+            </div>
                 <div class="image-card">
                   <h3 class="image-card__name">Проект LAB</h3>
                   <p class="image-card__desc">Маркетинг</p>
@@ -336,29 +306,24 @@
               </a>
         </li>
         <li class="product__item">
-              <a class="product__link">
-                <div class="product__image-thumb">
-                  <picture> 
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 450px) 450px,90vw" srcset="">
-                    <source type="image/webp" media="(min-width:768px) and (max-width: 1199px)" sizes="(min-width: 768px) and (min-width: 354px) 354px, 50vw" srcset="">
-                    <source type="image/webp" media="(min-width:1200px)" sizes="(min-width: 370px) 370px, 25vw" srcset="">
-                    <img
-                    class="image"
-                    src="./images/portfolio/portfolio-img8.jpg"
-                    alt="Growing Business"
-                    width="370"
-                  />
-                  </picture>
+          <a class="product__link">
+            <div class="product__image-thumb">
+              <picture>
+                <source srcset="./images/portfolio/growing-desktop.jpg 1x,
+                    ./images/portfolio/growing-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/portfolio/growing-tablet.jpg 1x,
+                    ./images/portfolio/growing-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/portfolio/growing-phone.jpg 1x,
+                    ./images/portfolio/growing-phone@2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/portfolio/growing.jpg" alt="Growing Business" />
+              </picture>
                   
-                  <p class="image__desc">
+              <p class="image__desc">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
-                  </p>
-                </div>
+              </p>
+            </div>
                 <div class="image-card">
                   <h3 class="image-card__name">Growing Business</h3>
                   <p class="image-card__desc">Додаток</p>
@@ -449,5 +414,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
