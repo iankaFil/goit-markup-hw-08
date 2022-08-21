@@ -1,5 +1,6 @@
 .features__list {
   gap: 30px;
+
   @media screen and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
