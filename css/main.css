@@ -572,6 +572,16 @@ body.modal-open {
   letter-spacing: 0.02em;
   color: #757575;
 }
+@media screen and (max-width: 767px) {
+  .header-contact__list .header-contact__link {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
 .header-contact__list .header-contact__link:hover, .header-contact__list .header-contact__link:focus {
   fill: #2196f3;
   color: #2196f3;
@@ -1712,6 +1722,16 @@ body.modal-open {
 }
 .social-small__item:not(:first-child) {
   padding-left: 10px;
+}
+@media screen and (max-width: 399px) {
+  .social-small__item:nth-child(3) {
+    border-right: none;
+  }
+}
+@media screen and (max-width: 399px) {
+  .social-small__item:nth-child(4) {
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+  }
 }
 
 .social-small {
