@@ -2,8 +2,7 @@
   @include font(null, 12px, 1.71, 0.03em, $subTextColor);
   position: relative;
   display: flex;
-  // justify-content: center;
-  margin-left: 12px;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 
