@@ -1,9 +1,9 @@
 @import "./bases/modern-nomalize";
+@import "./bases/reset-styles";
+@import "./bases/body";
 @import "./utils/mixins";
 @import "./utils/vars.scss";
 @import "./utils/visually_hidden";
-@import "./bases/reset-styles";
-@import "./bases/body";
 @import "./components/container";
 @import "./components/section";
 @import "./components/header";
